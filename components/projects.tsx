@@ -60,9 +60,9 @@ export default function Projects() {
                 <p className="text-2xl font-bold items-center">
                   AFL ELO Ranking System
                 </p>
-                <a className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl">
+                <div className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl group-active:text-violet-400">
                   <i className="fa-solid fa-external-link"></i>
-                </a>
+                </div>
               </div>
               <div className="flex items-center space-x-2">
                 <h3 className="text-md">
@@ -111,12 +111,12 @@ export default function Projects() {
             onMouseEnter={onEnter} // Use the context-safe function
             onMouseLeave={onLeave} // Use the context-safe function
           >
-            <a>
+            <div>
               <div className="justify-between flex flex-row mb-4 ">
                 <p className="text-2xl font-bold items-center">Contacts Page</p>
                 <div className="flex flex-row-reverse justify-end gap-5">
                   <a
-                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl"
+                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
                     href="https://contacts-app-1.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -124,7 +124,7 @@ export default function Projects() {
                     <i className="fa-solid fa-external-link"></i>
                   </a>
                   <a
-                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl "
+                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
                     href="https://github.com/sengfan0524/Contacts-App/tree/main/contacts-app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -149,7 +149,7 @@ export default function Projects() {
                   Tailwind CSS
                 </span>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
