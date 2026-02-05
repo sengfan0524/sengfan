@@ -33,11 +33,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bg-white dark:bg-gray-900 relative">{children}</div>
+        <div className="bg-white dark:bg-gray-900 relative max-w-full min-w-screen md:min-w-full">{children}</div>
       </body>
     </html>
   );

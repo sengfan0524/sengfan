@@ -41,12 +41,12 @@ export default function Projects() {
       </div>
       <div className="container mx-auto px-6 pb-32">
         <div
-          className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center"
           ref={cardRef}
         >
           {/* <!-- AFL Page --> */}
           <div
-            className="col-start-1 col-span-2 bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
+            className="flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
             onMouseEnter={onEnter} // Use the context-safe function
             onMouseLeave={onLeave} // Use the context-safe function
             ref={cardRef}
@@ -60,9 +60,9 @@ export default function Projects() {
                 <p className="text-2xl font-bold items-center">
                   AFL ELO Ranking System
                 </p>
-                <button className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl">
+                <a className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl">
                   <i className="fa-solid fa-external-link"></i>
-                </button>
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <h3 className="text-md">
@@ -72,7 +72,7 @@ export default function Projects() {
                 </h3>
               </div>
               <img src="afl-page.png" className="py-5"></img>
-              <div className="flex mx-3 border-gray-200 pt-2 px-1 gap-9">
+              <div className="flex flex-wrap mx-3 border-gray-200 px-1 md:gap-x-10 gap-x-3 gap-y-3">
                 <span className="text-sm text-gray-600 dark:text-white font-medium">
                   React
                 </span>
@@ -92,8 +92,6 @@ export default function Projects() {
                 <span className="text-sm text-gray-600 dark:text-white font-medium">
                   R
                 </span>
-              </div>
-              <div className="flex mx-3 border-gray-200 pb-3 pt-2 px-1 gap-9">
                 <span className="text-sm text-gray-600 dark:text-white font-medium">
                   TanStack
                 </span>
@@ -109,47 +107,49 @@ export default function Projects() {
 
           {/* <!-- Contacts Page --> */}
           <div
-            className="col-start-3 col-span-2 bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
+            className="relative flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
             onMouseEnter={onEnter} // Use the context-safe function
             onMouseLeave={onLeave} // Use the context-safe function
           >
-            <div className="flex justify-between mb-4">
-              <p className="text-2xl font-bold items-center">Contacts Page</p>
-              <div className="flex gap-5">
-                <a
-                  className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl"
-                  href="https://github.com/sengfan0524/Contacts-App/tree/main/contacts-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-github"></i>
-                </a>
-                <a
-                  className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl"
-                  href="https://contacts-app-1.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-solid fa-external-link"></i>
-                </a>
+            <a>
+              <div className="justify-between flex flex-row mb-4 ">
+                <p className="text-2xl font-bold items-center">Contacts Page</p>
+                <div className="flex flex-row-reverse justify-end gap-5">
+                  <a
+                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl"
+                    href="https://contacts-app-1.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-solid fa-external-link"></i>
+                  </a>
+                  <a
+                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl "
+                    href="https://github.com/sengfan0524/Contacts-App/tree/main/contacts-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-github"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center space-x-2 mb-6">
-              <h3 className="text-md">
-                A simple and responsive Contacts application that groups
-                contacts by their initials, and sorts the names within each
-                group.
-              </h3>
-            </div>
-            <img src="contacts-page.png" className="py-5"></img>
-            <div className="flex mx-3 border-gray-200 pb-3 pt-2 px-1 gap-9 ">
-              <span className="text-sm text-gray-600 dark:text-white font-medium">
-                React
-              </span>
-              <span className="text-sm text-gray-600 dark:text-white font-medium">
-                Tailwind CSS
-              </span>
-            </div>
+              <div className="flex items-center space-x-2 mb-6">
+                <h3 className="text-md">
+                  A simple and responsive Contacts application that groups
+                  contacts by their initials, and sorts the names within each
+                  group.
+                </h3>
+              </div>
+              <img src="contacts-page.png" className="py-5"></img>
+              <div className="flex mx-3 border-gray-200 pb-3 pt-2 px-1 md:gap-x-10 gap-x-3 gap-y-3 ">
+                <span className="text-sm text-gray-600 dark:text-white font-medium">
+                  React
+                </span>
+                <span className="text-sm text-gray-600 dark:text-white font-medium">
+                  Tailwind CSS
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
