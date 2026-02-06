@@ -51,29 +51,6 @@ export default function Timeline() {
                 labelled images in a S3 bucket for easy access and retrieval
               </li>
             </ul>
-            {/* <a
-              href="#"
-              className="inline-flex items-center text-gray-400 bg-neutral-secondary-medium rounded-lg border border-neutral-tertiary-medium hover:bg-neutral-tertiary-medium hover:text-white shadow-xs  font-medium tracking-wide rounded-base text-sm px-4 py-2.5"
-            >
-              Learn more
-              <svg
-                className="w-4 h-4 ms-1.5 -me-0.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="3"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 12H5m14 0-4 4m4-4-4-4"
-                />
-              </svg>
-            </a> */}
           </li>
           <li className="mb-10 ms-4">
             <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
