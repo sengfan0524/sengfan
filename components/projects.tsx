@@ -46,22 +46,24 @@ export default function Projects() {
         >
           {/* <!-- AFL Page --> */}
           <div
-            className="flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
+            className="flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white"
             onMouseEnter={onEnter} // Use the context-safe function
             onMouseLeave={onLeave} // Use the context-safe function
             ref={cardRef}
           >
-            <a
-              href="https://fit3164-39974.web.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <div className="flex justify-between mb-4">
                 <p className="text-2xl font-bold items-center">
                   AFL ELO Ranking System
                 </p>
-                <div className="flex justify-end text-gray-500 group-hover:text-violet-400 transition-colors text-2xl group-active:text-violet-400">
-                  <i className="fa-solid fa-external-link"></i>
+                <div className="flex justify-end text-gray-500 hover:text-violet-400 transition-colors text-2xl active:text-violet-400">
+                  <a
+                    href="https://fit3164-39974.web.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-solid fa-external-link"></i>
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
@@ -102,12 +104,12 @@ export default function Projects() {
                   Firebase
                 </span>
               </div>
-            </a>
+            </div>
           </div>
 
           {/* <!-- Contacts Page --> */}
           <div
-            className="relative flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white group"
+            className="relative flex flex-wrap min-w-fit bg-gray-800 rounded-md p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 project-card text-gray-900 dark:text-white"
             onMouseEnter={onEnter} // Use the context-safe function
             onMouseLeave={onLeave} // Use the context-safe function
           >
@@ -116,7 +118,7 @@ export default function Projects() {
                 <p className="text-2xl font-bold items-center">Contacts Page</p>
                 <div className="flex flex-row-reverse justify-end gap-5">
                   <a
-                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
+                    className=" text-gray-500 hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
                     href="https://contacts-app-1.netlify.app"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -124,7 +126,7 @@ export default function Projects() {
                     <i className="fa-solid fa-external-link"></i>
                   </a>
                   <a
-                    className=" text-gray-500 group-hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
+                    className=" text-gray-500 hover:text-violet-400 transition-colors text-2xl active:text-violet-400"
                     href="https://github.com/sengfan0524/Contacts-App/tree/main/contacts-app"
                     target="_blank"
                     rel="noopener noreferrer"
