@@ -23,7 +23,7 @@ export default function NavBar() {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="sticky top-0 z-100 scroll flex items-center justify-between p-6 lg:px-8 bg-gray-900" 
+        className="sticky top-0 z-100 scroll flex items-center justify-between p-6 lg:px-8 bg-gray-900 shadow-md" 
       >
         <div className="flex gap-x-12 items-center justify-center mx-auto w-screen">
           <a

@@ -10,7 +10,6 @@ export default function Home() {
     <div>
       <NavBar></NavBar>
       <HeroSection />
-
       <Timeline></Timeline>
       <Projects></Projects>
       <Connect></Connect>
