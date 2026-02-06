@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/sengfan",
+  basePath: process.env.PAGES_BASE_PATH,
   output: "export", // <=== enables static exports
   reactStrictMode: true,
 };
